@@ -7,6 +7,24 @@
 <body>
 <h1>HomePage</h1>
 
+<section id="welcome">
+    <header>
+        <h2>{{request.user}} Blog</h2>
+    </header>
+    <p>Hi I am {{request.user}} . I love to write about tech.</p>
+</section>
+
+<section id="latest-posts">
+    <h2>My Latest Thoughts</h2>
+
+</section>
+
+<section id="about">
+    <h2>What I do.</h2>
+    <p>I love Programming and love to explore new tech</p>
+    <p>My Goal is to keep growing as a developer</p>
+</section>
+
 <span>Hallo ,{{request.user}}</span>
 <div>
 <span><a href="{%url 'logout'%}">Logout</a></span>
